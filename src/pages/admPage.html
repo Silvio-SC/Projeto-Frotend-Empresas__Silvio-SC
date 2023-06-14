@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/admPage.css">
+
+    <script src="../script/admPage.js" type="module" defer></script>
+    <title>Kenzie Empresas - Dashboard</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <span></span>
+            <h1>Kenzie Empresas</h1>
+        </div>
+        <div>
+            <button class="button--outline">Logout</button>
+        </div>
+    </header>
+    <main>
+        <select value="">
+            <option value="">Selecionar Empresa</option>
+        </select>
+        <section class="section department">
+            <div class="department__title">
+                <h2>Departamentos</h2>
+                <button class="button--blue">+ Criar</button>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <!-- <div>
+                        <h3>DepartamentoNome</h3>
+                        <p class="description">DepartamentoDescrição</p>
+                        <p class="company">NomeCompanhia</p>
+                    </div>
+                    <div>
+                        <span class="department__view"><img src="../assets/icon/olho.svg" alt=""></span>
+                        <span class="department__edit"><img src="../assets/icon/editar.svg" alt=""></span>
+                        <span class="department__delete"><img src="../assets/icon/remover.svg" alt=""></span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="cards-empty hidden">
+                <h3>Empresa NOME não possui departamentos</h3>
+            </div>
+        </section>
+        <section class="section registered-users">
+            <h2>Usuários cadastrados</h2>
+            <div class="cards">
+                <div class="card">
+                    <!-- <div>
+                        <h3>Username</h3>
+                        <p>NomeCompanhia</p>
+                    </div>
+                    <div>
+                        <span class="registered-users__edit"><img src="../assets/icon/editar.svg" alt=""></span>
+                        <span class="registered-users__delete"><img src="../assets/icon/remover.svg" alt=""></span>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <dialog id="1">
+            <div class="modal__create-department">
+                <span class="close-btn"><img src="../assets/icon/close.svg"></span>
+                <h2>Criar Departamento</h2>
+                <form>
+                    <input name="name" type="text" placeholder="Nome do departamento">
+                    <input name="description" type="text" placeholder="Descrição">
+                    <select>
+                        <option value="">Selecionar empresa</option>
+                    </select>
+                </form>
+                <button class="button--action1">Criar</button>
+            </div>
+        </dialog>
+        <dialog id="2">
+            <div class="modal__view-department">
+                <span class="close-btn"><img src="../assets/icon/close.svg"></span>
+                <h2>Nome do departamento</h2>
+                <h3>Descrição do departamento</h3>
+                <p>Empresa pertencente</p>
+                <div>
+                    <select>
+                        <option value="">Selecionar usuário</option>
+                    </select>
+                    <button class="button--action1">Contratar</button>
+                </div>
+                <div class="modal__view-department__cards">
+                    <div class="modal-card">
+                        <h3>user</h3>
+                        <p>company</p>
+                        <button class="button--action2-outline">Desligar</button>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="3">
+            <div class="modal__edit-department">
+                <span class="close-btn"><img src="../assets/icon/close.svg"></span>
+                <h2>Editar Departamento</h2>
+                <input type="text">
+                <button class="button--action1">Salvar</button>
+            </div>
+        </dialog>
+        <dialog id="4">
+            <div class="modal__delete-department">
+                <span class="close-btn"><img src="../assets/icon/close.svg"></span>
+                <h2>Realmente deseja remover o Departamento NOME e demitir seus funcionários?</h2>
+                <button class="button--action2">Remover</button>
+            </div>
+        </dialog>
+        <dialog id="5">
+            <div class="modal__edit-registered-users">
+                <span class="close-btn"><img src="../assets/icon/close.svg"></span>
+                <h2>Editar Usuário</h2>
+                <form>
+                    <input name="name" type="text" placeholder="Nome">
+                    <input name="email" type="email" placeholder="E-mail">
+                </form>
+                <button class="button--action1">Salvar</button>
+            </div>
+        </dialog>
+        <dialog id="6">
+            <div class="modal__delete-registered-users">
+                <span class="close-btn"><img src="../assets/icon/close.svg"></span>
+                <h2>Realmente deseja remover o usuário NOME?</h2>
+                <button class="button--action2">Remover</button>
+            </div>
+        </dialog>
+    </main>
+    <div class="toast"></div>
+</body>
+</html>

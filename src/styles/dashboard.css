@@ -1,0 +1,90 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.5rem 10%;
+}
+
+.div-user {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    border: 1px solid var(--color-gray-3);
+    padding: 1.25rem 1.75rem; 
+}
+.div-user h2 {
+    color: var(--color-gray-1);
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.div-user p{
+    color: var(--color-gray-1);
+    font-size: 1rem;
+}
+
+.div-employee--empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50vh;
+
+    background-color: var(--color-gray-5);
+    border: 1px solid var(--color-gray-3);
+}
+
+.div-employee--empty h2 {
+    color: var(--color-gray-1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.div-employee {
+    background-color: var(--color-gray-5);
+    border: 1px solid var(--color-gray-3);
+
+    min-height: 60vh;
+}
+
+.div-employee__header {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--color-brand-1);
+    padding: 1rem 0;
+}
+
+.div-employee__header {
+    color: var(--color-mode);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.div-employee__cards {
+    display: flex;
+    row-gap: 1.25rem;
+    column-gap: 7%;
+    flex-wrap: wrap;
+
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.div-employee__cards div {
+    border: 1px solid var(--color-brand-1);
+    background-color: var(--color-mode);
+    padding: 1rem;
+    width: 25%;
+}
+
+.div-employee__cards div h3 {
+    color: var(--color-gray-1);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}

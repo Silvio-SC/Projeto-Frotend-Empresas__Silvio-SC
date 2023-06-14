@@ -1,0 +1,42 @@
+main {
+    background-image: url("../assets/FullBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100vh - 4.5rem);
+}
+
+.login {
+    background-color: rgb(255, 255, 255,0.95);
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 25%;
+
+}
+.login h2{
+    color: var(--color-gray-1);
+    font: 700 2.5rem Inter, sans-serif;
+}
+.login p{
+    color: var(--color-gray-1);
+    font-size: 18px;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.login span{
+   align-self: center;
+   color: var(--color-gray-1);
+}

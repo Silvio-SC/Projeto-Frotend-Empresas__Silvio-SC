@@ -8,9 +8,19 @@ Tecnologias utilizadas:
 HMTL e CSS: Metodologia BEM, Animações, Medidas Responsivas.
 JavaScript: DOM, Consumo de API local (Requisições HTTP), LocalStorage (JSON), JWT e Proteção de rota com base no Token do usuário.
 
+## Links
+
 Doc: http://localhost:3333/api-documentation/
 
 Fgima: https://www.figma.com/file/lrbOLWLRjonxYYVOxeLEQm/%5BM2%5D-%F0%9F%8F%81-Entrega---Kenzie-Empresas
 
 APi Local: https://github.com/Silvio-SC/Api-local-Empresas
 A API não foi feita por mim. 
+
+## Login ADM
+Email : admin@mail.com
+Senha : 123456 
+
+## Login Funcionario
+Email : silvio@email.com
+Senha : 123456 
